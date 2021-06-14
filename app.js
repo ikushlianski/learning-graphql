@@ -5,6 +5,7 @@ import mongoose from 'mongoose'
 
 const app = express();
 
+// user & password would be env variables in production of course!
 mongoose.connect('mongodb+srv://test1:wg9nP2ud0jhNhZKy@cluster0.4o3qg.mongodb.net/graphqldb',  {
   useNewUrlParser: true,
   useFindAndModify: false,
