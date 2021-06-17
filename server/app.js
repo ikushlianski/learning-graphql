@@ -2,8 +2,11 @@ import express from 'express'
 import { graphqlHTTP } from 'express-graphql'
 import {schema} from "./schema/schema.js";
 import mongoose from 'mongoose'
+import cors from 'cors'
 
 const app = express();
+
+app.use('/graphql', cors())
 
 // user & password would be env variables in production of course!
 mongoose.connect('mongodb+srv://test1:wg9nP2ud0jhNhZKy@cluster0.4o3qg.mongodb.net/graphqldb',  {
