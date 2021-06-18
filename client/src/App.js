@@ -1,12 +1,12 @@
 import React from "react";
-import BookList from './components/BookList.js'
-import AddBook from './components/AddBook.js'
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
+import BookList from "./components/BookList.js";
+import AddBook from "./components/AddBook.js";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
-  cache: new InMemoryCache()
-})
+  uri: "http://localhost:4000/graphql",
+  cache: new InMemoryCache(),
+});
 
 export default function App() {
   return (
@@ -17,5 +17,5 @@ export default function App() {
         <AddBook />
       </div>
     </ApolloProvider>
-  )
+  );
 }

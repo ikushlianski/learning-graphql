@@ -1,0 +1,24 @@
+{
+  "name": "learning-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lint": "prettier --write ./*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikushlianski/learning-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikushlianski/learning-graphql/issues"
+  },
+  "homepage": "https://github.com/ikushlianski/learning-graphql#readme"
+}

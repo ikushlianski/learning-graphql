@@ -1,11 +1,11 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
 const bookSchema = new Schema({
-    name: String,
-    genre: String,
-    authorId: String,
-})
+  name: String,
+  genre: String,
+  authorId: String,
+});
 
-export const bookModel = mongoose.model('Book', bookSchema)
+export const bookModel = mongoose.model("Book", bookSchema);
