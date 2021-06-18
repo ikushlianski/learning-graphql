@@ -19,16 +19,17 @@ const BookList = () => {
     <div>
       <ul id="book-list">
         {data.books.map((book) => (
-          <li onClick={(e) => selectBook(e, book.id)} key={book.id}>
-            <p>Title: {book.name}</p>
-            <small>id: {book.id}</small>
+          <li key={book.id}>
+            <a href="#" onClick={(e) => selectBook(e, book.id)}>
+              Title: {book.name}
+            </a>
           </li>
         ))}
       </ul>
 
       <hr />
 
-      <BookDetails bookId={selectedBookId} />
+      {selectedBookId && <BookDetails bookId={selectedBookId} />}
     </div>
   );
 };
