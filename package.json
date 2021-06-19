@@ -1,12 +1,13 @@
 {
   "name": "learning-graphql",
   "version": "1.0.0",
-  "description": "",
+  "description": "Various projects I built when learning GraphQL",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.7",
     "prettier": "^2.3.1"
   },
-  "devDependencies": {},
   "scripts": {
     "lint": "prettier --write ./*",
     "test": "echo \"Error: no test specified\" && exit 1"

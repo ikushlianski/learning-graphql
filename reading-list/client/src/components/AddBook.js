@@ -17,7 +17,7 @@ const AddBook = () => {
       {
         query: getBooksQuery,
       },
-    ],
+    ]
   });
 
   if (loading) return <p>Loading...</p>;
@@ -26,7 +26,7 @@ const AddBook = () => {
   const submit = (e) => {
     e.preventDefault();
 
-    console.log("name", name);
+    console.log('name', name);
     console.log("genre", genre);
     console.log("authorId", authorId);
 
